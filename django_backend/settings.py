@@ -28,17 +28,21 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application definition_________________________________________________
 
 INSTALLED_APPS = [
+    # Built in Django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_api',
-    'users'
+    # Dependecies.
+    'rest_framework',
+    # Local apss.
+    'django_apps.rest_api.apps.RestApiConfig',
+    'django_apps.users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
