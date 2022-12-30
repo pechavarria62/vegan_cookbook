@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # Dependecies.
     'rest_framework',
     # Local apss.
-    'django_apps.rest_api.apps.RestApiConfig',
+    'django_apps.frontend_integration.apps.RestApiConfig',
     'django_apps.users.apps.UsersConfig',
 ]
 
