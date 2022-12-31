@@ -1,10 +1,30 @@
 import React from 'react'
+import { Layout ,Menu} from 'antd';
+const { Header } = Layout;
 
-function Header() {
+function HeaderContent() {
     
     return (
-        <div>hola</div>
-    )
-}
+        <Layout>
+            <Header>
+                <div className='logo'/>
+                <Menu
+                    theme="dark"
+                    mode="horizontal"
+                    defaultSelectedKeys={['2']}
+                    items={new Array(5).fill(null).map((_, index) => {
+                    const key = index + 1;
+                    return {
+                        key,
+                        label: `nav ${key}`,
+                        textAlign: 'right',
+                    };
+                    })}
+                />
+                
+            </Header>
+        </Layout>
+    );
+};
 
-export default Header;
+export default HeaderContent;
