@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Layout ,Menu} from 'antd';
 const { Header } = Layout;
 
@@ -9,6 +9,7 @@ function HeaderContent() {
             <Header>
                 <div className='logo'/>
                 <Menu
+                    
                     theme="dark"
                     mode="horizontal"
                     defaultSelectedKeys={['2']}
@@ -17,7 +18,6 @@ function HeaderContent() {
                     return {
                         key,
                         label: `nav ${key}`,
-                        textAlign: 'right',
                     };
                     })}
                 />

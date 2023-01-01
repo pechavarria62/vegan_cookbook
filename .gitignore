@@ -33,6 +33,4 @@ venv.bak/
 
 # Visual Studio Code # 
 .vscode/*
-frontend/node_modules/antd/dist/reset.css
-frontend/node_modules/.cache/.eslintcache
-frontend/node_modules/.cache/*
+.hintrc
