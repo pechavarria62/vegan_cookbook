@@ -34,3 +34,7 @@ venv.bak/
 # Visual Studio Code # 
 .vscode/*
 .hintrc
+frontend/public/._vegan.png
+frontend/public/._veganFavicon.ico
+frontend/build/._veganFavicon.ico
+frontend/src/images/._vegan.png
