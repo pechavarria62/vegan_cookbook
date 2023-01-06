@@ -1,4 +1,5 @@
 import React from 'react';
+import './static/Header.css';
 // import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -24,7 +25,7 @@ export default function Header() {
                         }}
                     />
                     VeganBook
-                </Navbar.Brand>
+                </Navbar.Brand >
                     <Form className="d-flex">
                         <Form.Control
                         type="search"
@@ -36,10 +37,11 @@ export default function Header() {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse 
                     id="navbarScroll"
+                    className='right-aligned'
                     
                 >
                     <Nav
-                        className="me-auto mx-5 my-2 my-lg-0 "
+                        className=" mx-2 my-2 my-lg-0 "
                         style={{ 
                             maxHeight: '100px',
                         }}
