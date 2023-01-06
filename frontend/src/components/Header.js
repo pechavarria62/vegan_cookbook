@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -14,7 +14,7 @@ export default function Header() {
             <Container fluid>
                 <Navbar.Brand href="#">
                     <img
-                        alt="off road fun finder logo"
+                        alt="A plant growing in half of the world map"
                         src={vegan}
                         style={{
                             maxWidth: "84px",
