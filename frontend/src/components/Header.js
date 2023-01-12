@@ -1,6 +1,5 @@
 import React from 'react';
 import './static/Header.css';
-// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -47,7 +46,7 @@ export default function Header() {
                         }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
+                        <Nav.Link href="/home">Home</Nav.Link>
                         <Nav.Link href="#action2">Explore</Nav.Link>
                         <Nav.Link href="#action2">My Network</Nav.Link>
                         <Nav.Link href="#action2">Notifications</Nav.Link>
