@@ -2,6 +2,10 @@
 
 # dependencies
 frontend/node_modules/*
+frontend/public/._vegan.png
+frontend/public/._veganFavicon.ico
+frontend/build/._veganFavicon.ico
+frontend/src/images/._vegan.png
 /.pnp
 .pnp.js
 
@@ -24,7 +28,8 @@ yarn-error.log*
 # Environments 
 .env
 .env.local
-.venv 
+..venv 
+.venvG
 env/ 
 venv/ 
 ENV/ 
@@ -34,7 +39,4 @@ venv.bak/
 # Visual Studio Code # 
 .vscode/*
 .hintrc
-frontend/public/._vegan.png
-frontend/public/._veganFavicon.ico
-frontend/build/._veganFavicon.ico
-frontend/src/images/._vegan.png
+
