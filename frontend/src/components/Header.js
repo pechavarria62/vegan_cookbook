@@ -40,31 +40,31 @@ export default function Header() {
                     
                 >
                     <Nav
-                        className=" mx-2 my-2 my-lg-0 "
+                        className=" my-2 my-lg-0 "
                         style={{ 
                             maxHeight: '100px',
                         }}
                         navbarScroll
                     >
                         <Nav.Link href="/home">Home</Nav.Link>
-                        <Nav.Link href="#action2">Explore</Nav.Link>
-                        <Nav.Link href="#action2">My Network</Nav.Link>
-                        <Nav.Link href="#action2">Notifications</Nav.Link>
-                        <NavDropdown title="Messaging" id="navbarScrollingDropdown">
+                        <Nav.Link href="/Explore">Explore</Nav.Link>
+                        <Nav.Link href="/Favorites">Favorites</Nav.Link>
+                        <Nav.Link href="/News">News</Nav.Link>
+                        <NavDropdown title="Me!" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3">
-                                Comming soon!!
+                                Comming
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action4">
                                 Another action
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action5">
-                                Something else here
+                                Something else
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Account" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Comming soon!!</NavDropdown.Item>
-                        </NavDropdown>
+                        {/* <NavDropdown title="Account" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action3">login</NavDropdown.Item>
+                        </NavDropdown> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
