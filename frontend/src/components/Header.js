@@ -1,14 +1,18 @@
 import {React,Fragment }from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { FaHome,FaBell,FaBars,FaTimes } from 'react-icons/fa';
+import { 
+    FaHome,FaBell,FaBars,FaTimes,FaAngleDown,
+    FaWpexplorer,FaHandHoldingHeart,FaNewspaper,
+
+} from 'react-icons/fa';
 // import vegan from 'frontend/public/images/vegan.png';
 
 const navigation = [
-    { name: 'Home', href: '/home', current: true },
-    { name: 'Explore', href: '/Explore', current: false },
-    { name: 'Favorites', href: '/Favorites', current: false },
-    { name: 'News', href: '/News', current: false },
-    { name: 'Registration', href: '/Registration', current: false },
+    { name: 'Home', href: '/home', current: true, icon: <FaHome className=" h-8 w-8"/> },
+    { name: 'Explore', href: '/Explore', current: false, icon: <FaWpexplorer className=" h-8 w-8 "/>},
+    { name: 'Favorites', href: '/Favorites', current: false, icon: <FaHandHoldingHeart className=" h-8 w-8 "/>},
+    { name: 'News', href: '/News', current: false, icon: <FaNewspaper className=" h-8 w-8 "/> },
+    { name: 'Registration', href: '/Registration', current: false, icon: <FaWpexplorer className=" h-8 w-8 "/> },
 ]
 
 function classNames(...classes) {
@@ -37,12 +41,12 @@ export default function Header() {
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className=" flex flix-shrink-0 ">
                                     <img
-                                        className="hidden h-8 w-auto lg:block"
+                                        className="hidden h-10 w-auto lg:block"
                                         src={process.env.PUBLIC_URL + "/images/vegan.png"}
                                         alt="Your Company"
                                     />
                                     <img
-                                        className="block h-8 w-auto lg:hidden"
+                                        className="block h-10 w-auto lg:hidden"
                                         src={process.env.PUBLIC_URL + "/images/vegan.png"}
                                         alt="Your Company"
                                     />
@@ -59,11 +63,12 @@ export default function Header() {
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                            item.current ? ' text-gray-500 hover:text-black' : 'text-gray-500  hover:text-black',
                                             'px-3 py-2 rounded-md text-sm font-medium'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
                                         >
+                                            {item.icon}
                                             {item.name}
                                         </a>
                                         ))}
@@ -73,7 +78,7 @@ export default function Header() {
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                 type="button"
-                                className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                className="rounded-full p-1 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
                                 >
                                 <span className="sr-only">View notifications</span>
                                 <FaBell className="h-6 w-6" aria-hidden="true" />
@@ -82,14 +87,19 @@ export default function Header() {
                                 {/* Profile dropdown */}
                                 <Menu as="div" className="relative ml-3">
                                 <div>
-                                    <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                    <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none ">
                                     <span className="sr-only">Open user menu</span>
                                     <img
                                         className="h-8 w-8 rounded-full"
                                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        alt=""
+                                        alt="me"
                                     />
                                     </Menu.Button>
+                                    <span className='flex  flex-1 items-center justify-center text-gray-500'>
+                                        Me 
+                                        <FaAngleDown/>
+                                    </span>
+                                    
                                 </div>
                                 <Transition
                                     as={Fragment}
