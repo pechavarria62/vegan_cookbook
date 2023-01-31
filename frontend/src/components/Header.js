@@ -64,14 +64,11 @@ export default function Header() {
                                         <a
                                             key={item.name}
                                             href={item.href}
-                                            className={classNames(
-                                            item.current ? ' text-gray-500 hover:text-black' : 'text-gray-500  hover:text-black',
-                                            'px-3 py-2 rounded-md text-sm font-medium'
-                                            )}
+                                            className="text-gray-500  hover:text-black px-3 py-2 rounded-md text-sm font-medium flex flex-column items-center"
                                             aria-current={item.current ? 'page' : undefined}
                                         >
-                                            {item.icon}
-                                            {item.name}
+                                            <span>{item.icon}</span>
+                                            <span>{item.name}</span>
                                         </a>
                                         ))}
                                     </div>
@@ -116,7 +113,7 @@ export default function Header() {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="#"
+                                                    href="/klk"
                                                     className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                                 >
                                                     Your Profile
@@ -126,7 +123,7 @@ export default function Header() {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="#"
+                                                    href="/klk"
                                                     className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                                 >
                                                     Settings
@@ -136,7 +133,7 @@ export default function Header() {
                                         <Menu.Item>
                                             {({ active }) => (
                                             <a
-                                                href="#"
+                                                href="/klk"
                                                 className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                             >
                                                 Sign out
