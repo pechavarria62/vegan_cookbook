@@ -1,7 +1,12 @@
 import React from 'react'
 
+import Body from '../components/Body';
+
 export default function Home(){
     return (
-        <div>Let seee what i want here</div>
+        
+        <div>
+            <Body/>
+        </div>
     )
 };

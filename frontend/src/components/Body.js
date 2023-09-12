@@ -2,8 +2,9 @@ import React from 'react'
 
 function Body() {
     return (
-        <div>
+        <div className="sm (640px) bg-white mt-3 ">
         Body
+        
         </div>
     )
 }

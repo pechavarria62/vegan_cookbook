@@ -7,9 +7,9 @@ import Favorites from './pages/Favorites';
 import News from './pages/News';
 import Registration from './pages/Registration';
 import Login from './pages/Login'
+import Notification from './pages/Notification'
 
 import Header from './components/Header';
-import Body from './components/Body';
 import Footer from './components/Footer';
 const App =()=> {
   return (
@@ -23,8 +23,9 @@ const App =()=> {
           <Route path="/News" element={<News />} />
           <Route path="/Registration" element={<Registration />} />
           <Route path="/Login" element={<Login/>} />
+          <Route path="/Notification" element={<Notification/>} />
         </Routes>
-        <Body/>
+        
       </div>
       <Footer/>
     </BrowserRouter>
