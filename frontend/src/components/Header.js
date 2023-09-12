@@ -5,7 +5,6 @@ import {
     FaWpexplorer,FaHandHoldingHeart,FaNewspaper,FaSistrix
 
 } from 'react-icons/fa';
-// import vegan from 'frontend/public/images/vegan.png';
 
 const navigation = [
     { name: 'Home', href: '/home', current: true, icon: <FaHome className=" h-6 w-6"/> },
